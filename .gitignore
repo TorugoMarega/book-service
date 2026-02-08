@@ -1,0 +1,118 @@
+############################
+# SISTEMA OPERACIONAL
+############################
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Linux
+*~
+
+############################
+# IDEs / EDITORES
+############################
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+out/
+
+# Eclipse
+.project
+.classpath
+.settings/
+.apt_generated/
+.factorypath
+.springBeans
+
+# VS Code
+.vscode/
+
+# NetBeans
+nbproject/private/
+build/
+nbbuild/
+dist/
+nbdist/
+nbactions.xml
+nb-configuration.xml
+
+############################
+# JAVA / BUILD
+############################
+# Arquivos compilados
+*.class
+
+# Logs
+*.log
+*.log.*
+logs/
+log/
+
+# Maven
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+release.properties
+dependency-reduced-pom.xml
+.buildnumber
+
+# Gradle
+.gradle/
+**/build/
+!gradle/wrapper/gradle-wrapper.jar
+
+############################
+# SPRING / BOOT
+############################
+# JARs/WARs gerados
+*.jar
+*.war
+*.ear
+
+# Spring Boot devtools / configuração local
+.spring-boot-devtools.properties
+.spring-boot-devtools.json
+
+# Arquivos de configuração locais (ajuste se usar perfis)
+application-local.properties
+application-local.yml
+application-*.local.yml
+
+############################
+# FERRAMENTAS / OUTROS
+############################
+# Coverage
+*.exec
+jacoco.exec
+coverage/
+*.ec
+*.lcov
+
+# Bancos embarcados / dados locais
+*.db
+*.h2.db
+*.mv.db
+*.derby
+dump.rdb
+
+# Node (se tiver front junto)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+dist/
+build/**/*.map
+
+# Arquivos temporários
+*.tmp
+*.swp
+*.swo
+*.orig
