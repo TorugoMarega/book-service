@@ -7,9 +7,9 @@ import org.springframework.web.bind.annotation.PathVariable;
 
 import java.math.BigDecimal;
 
-@FeignClient(name = "exchange-service", url = "${service.exchange-service.base-url}")
+@FeignClient(name = "exchange-service")
 public interface IExchangeProxy {
-    @GetMapping(value = "/{amount}/{from}/{to}")
+    @GetMapping(value = "/exchange-service/{amount}/{from}/{to}")
     public ExchangeDTO getExchange(
             @PathVariable("amount") BigDecimal amount,
             @PathVariable("from") String from,

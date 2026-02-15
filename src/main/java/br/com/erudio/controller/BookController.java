@@ -50,7 +50,8 @@ public class BookController {
             log.info("Fazendo chamada para o serviço de exchange");
             ExchangeDTO exchange = exchangeProxy.getExchange(book.getPrice(), FROM_CURRENCY, currency);
             log.info("Livro retornado com sucesso");
-            book.setEnviroment(String.format("PORT: %s", port));
+//            book.setEnviroment(String.format("PORT: %s", port));
+                        book.setEnviroment(String.format("BOOK PORT: %s, EXCHANGE PORT: %s", port, exchange.getEnviroment()));
             book.setPrice(exchange.getConvertedValue());
             book.setCurrency(currency);
 
