@@ -1,3 +1,9 @@
+server:
+  port: 8100
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
 spring:
   datasource:
     url: jdbc:mariadb://localhost:3306/book_service
@@ -16,3 +22,14 @@ spring:
 service:
   exchange-service:
     base-url: http://localhost:8000/exchange-service
+
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include:
+          - '*'
+  endpoint:
+    health:
+      show-details: ALWAYS
